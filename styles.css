@@ -1,5 +1,5 @@
-@import url('https://fonts.google.com/specimen/Lexend+Deca');
- @import url('https://fonts.google.com/specimen/Big+Shoulders+Display');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
 
   *{
   box-sizing: border-box;
@@ -21,22 +21,18 @@ h1,h2,h3,h4,h5,h6,p {
 
 }
 
-.container h2 {
+.container h1 {
   text-transform: uppercase;
   color:  hsl(0, 0%, 95%);
-  margin-top: 30px;
-  font-family: "Big Shoulders Display" sans-serif;
-  font-weight: 700;
-
+  margin-top: 35px;
+  font-family: "Big Shoulders Display", sans-serif;
 }
 
 .container p {
-  color: hsla(0, 0%, 100%, 0.75);
-  font-size: 15px;
-  font-weight: 400;
-  font-family: "Lexend Deca", sans-serif;
-  line-height: 21px;
   margin-top: 30px;
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 .after-body {
@@ -52,37 +48,34 @@ h1,h2,h3,h4,h5,h6,p {
   width: 50%;
   height: 60vh;
   display: grid;
-  grid-template-columns: repeat(3, 2fr);
+  grid-template-columns: repeat(3, 3fr);
   border-radius: 7px;
   overflow:hidden;
 }
 
 .left-container {
   background: hsl(31, 77%, 52%);
-  display: flex;
 }
 
 .middle-container{
   background: hsl(184, 100%, 22%);
-  display: flex;
 }
 
 .right-container {
   background: hsl(179, 100%, 13%);
-  display: flex;
 }
 
 .btn {
   margin-top: 70px;
-  font-weight: 400;
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 button {
   border: 2px solid hsl(0, 0%, 95%);
   border-radius: 30px;
   font-size: 15px;
-  width:70%;
-  height: 45px;
+  width:55%;
+  height: 40px;
   background: none;
   color: hsla(0, 0%, 100%, 0.75);
 }
