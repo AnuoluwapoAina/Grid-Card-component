@@ -8,14 +8,15 @@ body {
   margin: 0;
   padding: 0;
   color: #fff;
+  background: hsl(0, 0%, 95%);
 }
 
 h1,h2,h3,h4,h5,h6,p {
   margin:0;
 }
 
-.left-inner, .middle-inner, .right-inner{
-  margin: 35px;
+.left-container, .middle-container, .right-container{
+  padding: 35px;
 }
 
 .container h1 {
@@ -32,13 +33,14 @@ h1,h2,h3,h4,h5,h6,p {
   font-size: 15px;
   color: hsla(0, 0%, 100%, 0.75);
   font-family: 'Lexend Deca', sans-serif;
+  line-height: 1.5;
 }
 
 
 .after-body {
   background: hsl(0, 0%, 95%);
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   justify-content: center;
   align-items:center;
   display: flex;
@@ -46,7 +48,6 @@ h1,h2,h3,h4,h5,h6,p {
 
 .container {
   width: 55%;
-  height: 60vh;
   display: grid;
   grid-template-columns: repeat(3, 3fr);
   border-radius: 7px;
@@ -76,6 +77,75 @@ button {
   font-size: 15px;
   width:55%;
   height: 40px;
-  background: none;
   color: hsla(0, 0%, 100%, 0.75);
+}
+
+.left-container button {
+  background: hsl(31, 77%, 52%);
+}
+
+.middle-container button {
+  background: hsl(184, 100%, 22%);
+}
+
+.right-container button {
+  background: hsl(179, 100%, 13%);
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .after-body {
+    height: unset;
+    padding: 50px 0;
+  }
+
+  .container {
+    width: 50%;
+    display: block;
+  }
+
+  .btn {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin:0;
+    font-family: 'Lexend Deca', sans-serif;
+  }
+
+
+
+  .left-inner, .middle-inner, .right-inner{
+    margin: 0;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container{
+    width: 65%;
+  }
+}
+@media screen and (max-width: 426px) {
+
+  .container {
+    width: 85%;}
+
+  .left-container button {
+    background: #fff;
+    color: hsl(31, 77%, 52%);
+  }
+
+  .middle-container button {
+    background: #fff;
+      color: hsl(184, 100%, 22%);
+  }
+
+  .right-container button {
+    background: #fff;
+    color: hsl(179, 100%, 13%);
+
+  }
+
+
 }
