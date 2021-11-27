@@ -98,7 +98,7 @@ button {
 @media screen and (max-width: 1024px) {
   .after-body {
     height: unset;
-    padding: 50px 0;
+    padding: 40px 0;
   }
 
   .container {
@@ -128,24 +128,41 @@ button {
 }
 @media screen and (max-width: 426px) {
 
-  .container {
-    width: 85%;}
+  .after-body {
+    height: unset;
+    padding: 40px 0;
+  }
 
-  .left-container button {
+  .container {
+    width: 80%;
+  }
+
+  .left-container button:hover {
     background: #fff;
     color: hsl(31, 77%, 52%);
   }
 
-  .middle-container button {
+  .middle-container button:hover {
     background: #fff;
       color: hsl(184, 100%, 22%);
   }
 
-  .right-container button {
+  .right-container button:hover {
     background: #fff;
     color: hsl(179, 100%, 13%);
 
   }
 
+}
 
+@media screen and (max-width: 376px) {
+
+.after-body{
+  padding: 35px 0;
+}
+
+  .container {
+    width: 80%;
+    height: unset;
+  }
 }
